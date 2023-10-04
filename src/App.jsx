@@ -18,11 +18,11 @@ function App() {
         <div className='flex-container'>
           <img src={logo}/>
           <ul className='nav-bar'>
-            <li><a>Home</a></li>
-            <li><a>New</a></li>
-            <li><a>Popular</a></li>
-            <li><a>Trending</a></li>
-            <li><a>Categories</a></li>
+            <li><a className='links'>Home</a></li>
+            <li><a className='links'>New</a></li>
+            <li><a className='links'>Popular</a></li>
+            <li><a className='links'>Trending</a></li>
+            <li><a className='links'>Categories</a></li>
           </ul>
           <button className='hamburger'><img src={iconMenu}/></button>
         </div>
