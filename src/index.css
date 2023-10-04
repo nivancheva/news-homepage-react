@@ -41,11 +41,11 @@
     --fz-xs: 1.125rem;
 
     --line-h-main: 1.625;
-    --line-h--xl: 3.5;
-    --line-h--l: 2.5;
-    --line-h--m: 2;
-    --line-h--s: 1.25;
-    --line-h--xs: 1.25;
+    --line-h-xl: 3.5;
+    --line-h-l: 2.5;
+    --line-h-m: 2;
+    --line-h-s: 1.25;
+    --line-h-xs: 1.25;
 }
 
 *, *::before, *::after {

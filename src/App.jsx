@@ -16,18 +16,22 @@ function App() {
           <img src={logo}/>
           <button className='hamburger'><img src={iconMenu}/></button>
         </div>
-        <picture className='imageWeb'>
-          <source srcSet={imageWebDsktop} media="(min-width:900px)"/>
-          <img src={imageWebMobile}/>
-      </picture>
-      </nav>
-      
+      </nav>    
 
-      <main className='grid-container'>
-        <div className='container main-header'>
-          <h1>The Bright Future of Web 3.0?</h1>
-          <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
-          <button className='button'>Read more</button>
+      <main className='container grid-container'>
+        <div>
+          <picture className='imageWeb'>
+              <source srcSet={imageWebDsktop} media="(min-width:900px)"/>
+              <img src={imageWebMobile}/>
+          </picture>
+
+          <div className='container main-header'>
+            <h1>The Bright Future of Web 3.0?</h1>
+            <div>
+              <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+              <button className='button'>Read more</button>
+            </div>
+          </div>
         </div>
 
         <div className='news-section'>
@@ -47,8 +51,9 @@ function App() {
             </div>
           </div>
         </div>
+      </main>
 
-        <div className='container grid-container articles'>
+      <div className='container articles'>
           <div className='flex-container articles-data'>
             <img className='articles-img' src={pcsImg}/>
             <div className='article'>
@@ -76,7 +81,6 @@ function App() {
             </div>
           </div>
         </div>
-      </main>
     </div>
   )
 }
