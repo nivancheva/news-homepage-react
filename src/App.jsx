@@ -12,6 +12,10 @@ import { useState } from 'react';
 function App() {
   const [menuVisible, setMenuVisible] = useState(false);
 
+  function handleClick() {
+    setMenuVisible('true');
+  }
+
   return (
     <div className='wrapper'>
       <nav className='container nav-container'>
@@ -24,7 +28,7 @@ function App() {
             <li><a className='links'>Trending</a></li>
             <li><a className='links'>Categories</a></li>
           </ul>
-          <button className='hamburger'><img src={iconMenu}/></button>
+          <button onClick={handleClick} className='hamburger'><img src={iconMenu}/></button>
         </div>
       </nav>    
 
