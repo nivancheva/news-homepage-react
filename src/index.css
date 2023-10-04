@@ -85,9 +85,19 @@ body {
     background-color: var(--clr-very-dark-blue);
 }
 
+
+.links {
+    text-decoration: none;
+    color: var(--clr-very-dark-blue)
+}
+
 .links:hover {
     cursor: pointer;
     color: var(--clr-red);
+}
+
+.links-new {
+    color: var(--clr-off-white);
 }
 
 .links-new:hover {

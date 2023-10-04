@@ -38,27 +38,26 @@ function App() {
           <h2>New</h2>
           <div className='news-section-data'>
             <div className='decoration'>
-              <h3>Hydrogen VS Electric Cars</h3>
+             <a className='links links-new' href='#'><h3>Hydrogen VS Electric Cars</h3></a>
               <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
             </div>
             <div className='decoration'>
-              <h3>The Downsides of AI Artistry</h3>
+              <a className=' links links-new' href='#'><h3>The Downsides of AI Artistry</h3></a>
               <p>What are the possible adverse effects of on-demand AI image generation?</p>
             </div>
             <div>
-              <h3>Is VC Funding Drying Up?</h3>
+              <a className='links links-new'  href='#'><h3>Is VC Funding Drying Up?</h3></a>
               <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
             </div>
           </div>
         </div>
-      </main>
 
-      <div className='container articles'>
+        <div className='container articles'>
           <div className='flex-container articles-data'>
             <img className='articles-img' src={pcsImg}/>
             <div className='article'>
               <p className='num'>01</p>
-              <h4>Reviving Retro PCs</h4>
+              <a className='links' href='#'><h4>Reviving Retro PCs</h4></a>
               <p className='article-description'>What happens when old PCs are given modern upgrades?</p>
             </div>
           </div>
@@ -67,7 +66,7 @@ function App() {
             <img className='articles-img' src={laptopImg}/>
             <div className='article'>
               <p className='num'>02</p>
-              <h4>Top 10 Laptops of 2022</h4>
+              <a className='links' href='#'><h4>Top 10 Laptops of 2022</h4></a>
               <p className='article-description'>Our best picks for various needs and budgets.</p>
             </div>
           </div>
@@ -76,11 +75,12 @@ function App() {
             <img className='articles-img' src={gamingImg}/>
             <div className='article'>
               <p className='num'>03</p>
-              <h4>The Growth of Gaming</h4>
+              <a className='links' href='#'><h4>The Growth of Gaming</h4></a>
               <p className='article-description'>How the pandemic has sparked fresh opportunities.</p>
             </div>
           </div>
         </div>
+      </main>    
     </div>
   )
 }
