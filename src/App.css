@@ -1,3 +1,16 @@
+.wrapper {
+    margin: 1.75rem 0 4rem;
+}
+
+.container {
+    margin:0 1rem;
+}
+
+.grid-container {  
+    display: grid;
+    gap: 4rem;
+}
+
 .flex-container {
     display: flex;
     align-items: center;
@@ -9,11 +22,72 @@
     background-color: inherit;
 }
 
+.nav-container {
+    display: grid;
+    gap: 2rem;
+
+    margin-bottom: 2rem;
+}
+
+.main-header p {
+    margin: 1rem 0 1.5rem 0
+}
+
 .news-section {
     background-color: var(--clr-very-dark-blue);
     color: var(--clr-grayish-blue);
+    padding: 1.5rem;
+
 }
 
-.news-section h2, h3 {
+.news-section h2 {
+    margin-bottom: 2rem;
+    color: var(--clr-orange);
+}
+
+.news-section h3 {
     color: var(--clr-off-white);
+}
+
+.news-section-data {   
+    display: grid;
+    gap: 3.8125rem;
+}
+
+.decoration {
+    position: relative;
+}
+
+.decoration p::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -1.8125rem;
+    border:1px solid var( --clr-grayish-blue)
+}
+
+.articles {
+    gap: 2rem
+}
+
+.articles-data {
+    gap: 1.5rem;
+}
+
+.articles-img {
+    width: 30%;
+}
+
+.num {
+    font-size: var(--fz-m);
+    color: var(--clr-grayish-blue);
+}
+
+.article h4 {
+    font-weight: var(--fw-extra-bold);
+}
+
+.article-description {
+    color: var( --clr-dark-grayish-blue);
 }
