@@ -1,0 +1,19 @@
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hamburger {
+    border: 0;
+    background-color: inherit;
+}
+
+.news-section {
+    background-color: var(--clr-very-dark-blue);
+    color: var(--clr-grayish-blue);
+}
+
+.news-section h2, h3 {
+    color: var(--clr-off-white);
+}
