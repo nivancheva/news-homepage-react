@@ -15,6 +15,10 @@
 .flex-container {
     display: flex;
     align-items: center;
+    justify-content: start;
+}
+
+.nav {
     justify-content: space-between;
 }
 
@@ -109,6 +113,10 @@
     color: var( --clr-dark-grayish-blue);
 }
 
+.mobile-menu-hidden {
+    display: none
+}
+
 @media (min-width:800px) {
     .wrapper {
         margin: 0;
@@ -146,6 +154,13 @@
     .articles {
         grid-template-columns: repeat(3, 1fr);
         grid-column: span 3;
-        width: 100%;
+    }
+
+    .mobile-menu-hidden {
+        display: flex;
+    }
+
+    .hamburger {
+        display: none;
     }
 }

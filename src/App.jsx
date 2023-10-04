@@ -10,14 +10,14 @@ import pcsImg from './images/image-retro-pcs.jpg';
 import { useState } from 'react';
 
 function App() {
-  const [menu, setMenu] = useState(false);
+  const [menuVisible, setMenuVisible] = useState(false);
 
   return (
     <div className='wrapper'>
       <nav className='container nav-container'>
-        <div className='flex-container'>
+        <div className='flex-container nav'>
           <img src={logo}/>
-          <ul className='nav-bar'>
+          <ul className={ `nav-bar ${menuVisible ? "" : "mobile-menu-hidden"} `}>
             <li><a className='links'>Home</a></li>
             <li><a className='links'>New</a></li>
             <li><a className='links'>Popular</a></li>
