@@ -12,8 +12,12 @@ import { useState } from 'react';
 function App() {
   const [menuVisible, setMenuVisible] = useState(false);
 
-  function handleClick() {
-    setMenuVisible('true');
+  function handleShowMenu() {
+    setMenuVisible(true);
+  }
+
+  function handleHideMenu() {
+    setMenuVisible(false);
   }
 
   return (
@@ -28,7 +32,15 @@ function App() {
             <li><a className='links'>Trending</a></li>
             <li><a className='links'>Categories</a></li>
           </ul>
-          <button onClick={handleClick} className='hamburger'><img src={iconMenu}/></button>
+          <div>
+            {
+              menuVisible
+              ?
+              <button onClick={handleHideMenu} className={ `menuClose ${menuVisible ? "" : "mobile-menu-hidden"} `}><img src={iconMenuClose}/></button>
+              :
+              <button onClick={handleShowMenu} className='hamburger'><img src={iconMenu}/></button>
+            }         
+          </div>
         </div>
       </nav>    
 

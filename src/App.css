@@ -22,9 +22,16 @@
     justify-content: space-between;
 }
 
-.hamburger {
+.hamburger, .menuClose {
     border: 0;
     background-color: inherit;
+    cursor: pointer;
+}
+
+.menuClose {
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .nav-container {
@@ -42,10 +49,11 @@
     top: 0;
     padding: 9rem 1.5rem;
     background-color: white;
+    margin: 0;
 
     display: flex;
     flex-direction: column;
-    gap: 1.5rem
+    gap: 1.5rem;
 }
 
 .main-header {
@@ -160,7 +168,7 @@
         display: flex;
     }
 
-    .hamburger {
+    .hamburger, .menuClose {
         display: none;
     }
 }
