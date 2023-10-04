@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('./fonts/static/Inter-Regular.ttf') format("truetype");
+    src: url('./fonts/Inter-VariableFont_slntwght.ttf') format("truetype-variations");
+    font-weight: 400;
+}
+  
+@font-face {
+    font-family: 'Inter';
+    src: url('./fonts/static/Inter-Bold.ttf') format("truetype");
+    src: url('./fonts/Inter-VariableFont_slntwght.ttf') format("truetype-variations");
+    font-weight: 700;
+  }
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./fonts/static/Inter-ExtraBold.ttf') format("truetype");
+    src: url('./fonts/Inter-VariableFont_slntwght.ttf') format("truetype-variations");
+    font-weight: 800;
+}
+
+:root {
+    --clr-orange: hsl(35, 77%, 62%);
+    --clr-red: hsl(5, 85%, 63%);
+    --clr-off-white: hsl(36, 100%, 99%);
+    --clr-grayish-blue: hsl(233, 8%, 79%);
+    --clr-dark-grayish-blue: hsl(236, 13%, 42%);
+    --clr-very-dark-blue: hsl(240, 100%, 5%);
+
+    --ff-main: 'Inter';
+
+    --fw-regular: 400;
+    --fw-bold: 700;
+    --fw-extra-bold: 800;
+
+    --fz-main: .9375rem;
+    --fz-xl: 3.5rem;
+    --fz-l: 2.5rem;
+    --fz-m: 2rem;
+    --fz-s: 1.25rem;
+    --fz-xs: 1.125rem;
+
+    --line-h-main: 1.625;
+    --line-h--xl: 3.5;
+    --line-h--l: 2.5;
+    --line-h--m: 2;
+    --line-h--s: 1.25;
+    --line-h--xs: 1.25;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+body {
+    font-family: var(--ff-main);
+    font-weight: var(--fw-regular);
+    font-size: var(--fz-main);
+    line-height: var(--line-h-main);
+}
+
+.button {
+    text-transform: uppercase;
+    border: 0;
+    background-color: var(--clr-red);
+    color: var(--clr-off-white);
+    padding: .8125rem 2.1875rem;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: var(--clr-very-dark-blue);
+}
+
+.links:hover {
+    cursor: pointer;
+    color: var(--clr-red);
+}
+
+.links-new:hover {
+    color: var(--clr-orange);
+}
