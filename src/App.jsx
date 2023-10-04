@@ -7,13 +7,23 @@ import iconMenuClose from './images/icon-menu-close.svg';
 import gamingImg from './images/image-gaming-growth.jpg';
 import laptopImg from './images/image-top-laptops.jpg';
 import pcsImg from './images/image-retro-pcs.jpg';
+import { useState } from 'react';
 
 function App() {
+  const [menu, setMenu] = useState(false);
+
   return (
     <div className='wrapper'>
       <nav className='container nav-container'>
         <div className='flex-container'>
           <img src={logo}/>
+          <ul className='nav-bar'>
+            <li><a>Home</a></li>
+            <li><a>New</a></li>
+            <li><a>Popular</a></li>
+            <li><a>Trending</a></li>
+            <li><a>Categories</a></li>
+          </ul>
           <button className='hamburger'><img src={iconMenu}/></button>
         </div>
       </nav>    
@@ -21,7 +31,7 @@ function App() {
       <main className='container grid-container'>
         <div>
           <picture className='imageWeb'>
-              <source srcSet={imageWebDsktop} media="(min-width:900px)"/>
+              <source srcSet={imageWebDsktop} media="(min-width:800px)"/>
               <img src={imageWebMobile}/>
           </picture>
 

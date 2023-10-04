@@ -70,6 +70,7 @@ body {
     font-weight: var(--fw-regular);
     font-size: var(--fz-main);
     line-height: var(--line-h-main);
+    background-color: var(--clr-off-white);
 }
 
 .button {
